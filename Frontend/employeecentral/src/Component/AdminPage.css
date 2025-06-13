@@ -1,0 +1,168 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  /* overflow-x: hidden; */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; 
+  z-index: 1000;
+}
+
+/* Container around the page to handle spacing and scrolling */
+.admin-container {
+  /* margin-top: auto; */
+  padding-top: 30px; /* Space for navbar */
+  padding-bottom: 40px;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  /* overflow-y: auto; */
+}
+
+.topics{
+  padding: 0.8rem 1rem;
+}
+/* Main form box */
+.admin-page {
+  margin-top: 20%;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+/* Headings */
+.admin-page h2, .admin-page h3 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+/* Form and Labels */
+.admin-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.admin-page label {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* Inputs */
+.admin-page input[type="text"],
+.admin-page input[type="email"],
+.admin-page input[type="password"] {
+  width: 80%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: #333;
+  outline: invert;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.admin-page input[type="text"]::placeholder,
+.admin-page input[type="email"]::placeholder,
+.admin-page input[type="password"]::placeholder {
+  color: #e0e0e0;
+}
+
+.admin-page input:focus {
+  box-shadow: 0 0 8px 2px #ffd700;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Buttons */
+.admin-page button {
+  width: fit-content;
+  align-self: center;
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 214, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.admin-page button:hover {
+  background: linear-gradient(90deg, #ffd200, #f7971e);
+  box-shadow: 0 6px 20px rgba(255, 214, 0, 0.8);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .admin-page {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+.form-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.submitbtn {
+  display: block;
+  margin: 2rem auto 0 auto; /* centers the button horizontally */
+  padding: 0.85rem 1.5rem;
+  background-color: red; /* yellow gradient */
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 50px;
+  /* box-shadow: 0 4px 15px rgba(255, 214, 0, 0.5); */
+  /* transition: background 0.3s ease; */
+  text-align: center;
+  margin-left: 20px;
+}
+
+.submitbtn:hover {
+  background: linear-gradient(90deg, #ffd200, #f7971e);
+  box-shadow: 0 6px 20px rgba(255, 214, 0, 0.8);
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px #ffd700;
+  background: rgba(255, 255, 255, 0.25);
+}

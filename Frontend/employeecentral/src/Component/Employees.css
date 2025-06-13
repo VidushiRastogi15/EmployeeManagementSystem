@@ -1,0 +1,122 @@
+/* EmployeePage.css */
+
+body, html {
+   margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.employee-container {
+  /* margin-top: auto; */
+  padding-top: 30px; /* Space for navbar */
+  padding-bottom: 40px;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  /* overflow-y: auto; */
+}
+
+.employee-page {
+  margin-top: 20%;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.employee-page h2 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.employee-page button {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 214, 0, 0.5);
+  transition: background 0.3s ease;
+}
+
+.employee-page button:hover {
+  background: linear-gradient(90deg, #ffd200, #f7971e);
+  box-shadow: 0 6px 20px rgba(255, 214, 0, 0.8);
+}
+
+.profile-details {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+  color: black;
+  margin-top: 1.5rem;
+}
+
+.profile-details h3 {
+  margin-bottom: 1rem;
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 0.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.profile-details p {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  color: black;
+}
+
+.profile-details strong {
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .employee-page {
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
+.submit-btn {
+  display: block;
+  margin: 2rem auto 0 auto; /* centers the button horizontally */
+  padding: 0.85rem 1.5rem;
+  background-color: red; /* yellow gradient */
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 50px;
+  /* box-shadow: 0 4px 15px rgba(255, 214, 0, 0.5); */
+  /* transition: background 0.3s ease; */
+  text-align: center;
+  margin-left: 20px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #ffd200, #f7971e);
+  box-shadow: 0 6px 20px rgba(255, 214, 0, 0.8);
+}
